@@ -28,5 +28,5 @@ func main() {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintln(w, "Bets platform best platform")
+        fmt.Fprintf(w, "Bets platform, best platform 001\n")
 }

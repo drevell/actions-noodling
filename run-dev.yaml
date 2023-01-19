@@ -6,4 +6,4 @@ spec:
   template:
     spec:
       containers:
-      - image: "us-west1-docker.pkg.dev/clouddeploy-1-375023/cd-cr-noodling/my-app-image:latest"
+      - image: image-placeholder
