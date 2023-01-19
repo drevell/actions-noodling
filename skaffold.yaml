@@ -1,0 +1,24 @@
+apiVersion: skaffold/v3alpha1
+kind: Config
+metadata:
+  name: deploy-run-quickstart
+build:
+  local:
+    push: true
+  artifacts:
+  - image: "us-west1-docker.pkg.dev/clouddeploy-1-375023/cd-cr-noodling/my-app-image"
+    buildpacks:
+      builder: gcr.io/buildpacks/builder:v1
+profiles:
+- name: dev
+  manifests:
+    rawYaml:
+    - run-dev.yaml
+- name: prod
+  manifests:
+    rawYaml:
+    - run-prod.yaml
+deploy:
+  cloudrun:
+    region: us-west1
+    projectid: clouddeploy-1-375023
