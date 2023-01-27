@@ -1,3 +1,1 @@
-# actions-noodling
-
-Hello world!
+An abandoned scratch workspace of messing with Cloud Deploy

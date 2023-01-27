@@ -1,0 +1,5 @@
+billing_account = "009DE6-A7C95A-2AEE97"
+region = "us-west1"
+folder_id = "436745444848"
+proj_name_prefix = "CD2"
+proj_id_prefix = "revell-cd2"
